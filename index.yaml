@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  greet-app-chart:
+  - apiVersion: v2
+    created: "2025-10-23T04:42:11.798794194Z"
+    description: A Helm chart for Kubernetes
+    digest: 488ddea5661a38537da3afea95269609cf80415df26051ce69fcd44a81550ba0
+    name: greet-app-chart
+    type: application
+    urls:
+    - https://niketajain123.github.io/app-chart/greet-app-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-10-23T04:42:11.795344913Z"
