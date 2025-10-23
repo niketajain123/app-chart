@@ -1,0 +1,22 @@
+replicaCount: 1
+image:
+  repository: niketa15jain/greet-app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+
+service:
+  type: NodePort
+  port: 5000
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs:
+      - job_name: 'jenkins'
+        static_configs:
+          - targets: ['localhost:8080']
